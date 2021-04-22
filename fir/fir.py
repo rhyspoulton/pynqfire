@@ -120,7 +120,7 @@ class fir():
     def reset(self):
         """ Reset hardware state
         """
-        din = self.mem_init(100)
+        din = self.mem_init(500000)
         w = self.mem_init(85)
-        dout = self.mem_init(100)
-        self.lib._p0_cpp_FIR_1_noasync(din,w,dout,100)
+        dout = self.mem_init(500000)
+        self.lib._p0_cpp_FIR_1_noasync(din,w,dout,500000)
